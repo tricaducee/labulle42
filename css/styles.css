@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+
+* {
+    font-family: 'Montserrat';
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+html, body {
+    margin: 0 auto;
+  }
+
+section.top-page {
+    background: url('../img/HEADER.svg') center fixed;
+    background-size: cover; /*l'image ne se répète pas si on agrandi la fenêtre*/
+    height: 95vh;
+    padding: 0;
+}
+
+#logo_container {
+    height: 100vh;
+	width: 100%;
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+}
+.logo {
+    margin-top: 5%;
+    height: 65vh;
+	align-items: center;
+}
+/*
+    texte de presentation
+*/
+
+#presentation {
+    background: linear-gradient(#070783 0%, #091a2b 60%);
+}
+
+.presentation_container {
+    padding: 0 400px 140px 400px;
+    color: #BDD6FF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#cestquoi {
+    padding-top: 30px;
+    font-size: small;
+    font-style: italic;
+    font-weight: 400;
+}
+
+.paragraphe {
+    font-weight: 500;
+    text-align: justify;
+}
+
+/*
+    sticky menu
+*/
+
+.sticky {
+    z-index: 1;
+    width: 100%;
+	background-color: #091a2b;
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+}
+
+.sticky_container {
+    width: auto;
+    height: 40px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-top: 2px solid #BDD6FF;
+    border-bottom: 2px solid #BDD6FF;
+}
+
+a {
+    text-decoration: none;
+    color: #BDD6FF;
+    font-weight: 500;
+    font-size: 1em;
+}
+
+/*
+    people part
+*/
+
+#people {
+    background: linear-gradient(#091a2b 85%, #00113A 95%);
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.image {
+    margin: 5vh;
+}
+
+.students_42 {
+    margin: 5vh;
+}
+
+.students_help {
+    margin: 5vh;
+    margin-bottom: 25vh;
+}
+
+/* 
+    objectives
+ */
+
+ #objectives {
+    width: 100%;
+    height: auto;
+    color: #fff;
+    background-color: #00113A;
+ }
+
+ h1 {
+    font-size: 3em;
+    padding-top: 50px;
+ }
+
+ h2 {
+     padding-bottom: 30px;
+ }
+
+ h3 {
+     padding-top: 70px;
+     padding-bottom: 40px;
+     margin-right: 20px;
+ }
+
+ h1, h2, h3 {
+    text-align: center;
+    font-weight: 300;
+    margin: 0;
+
+}
+
+.div_hr {
+    display: flex;
+    align-items: center;
+}
+hr {
+    width: 300px;
+    border-color: #fff;
+    margin-top: 50px;
+}
+
+ .footer-container1,
+ .footer-container2,
+ .footer-container3 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-around;
+    width: 80%;
+    height: 100%;
+    margin-left: 10%;
+  }
+  
+  #f_future_students,
+  #f_student_life,
+  #f_collaboration,
+  #f_clubs,
+  #f_education,
+  #f_fun,
+  #f_web,
+  #f_merchandising,
+  #f_extra {
+    display: flex;
+    flex-direction: column;
+    width: 340px;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    margin: 30px;
+
+}
+
+/* 
+    footer
+*/
+
+footer {
+
+    background: url('../img/wave_bottom.svg') center;
+    background-size: cover;
+    height: 60vh;
+    padding: 25px;
+}
+
+#vote_container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#voter {
+    position: absolute;
+    z-index: 10;
+    font-size: 5vh;
+    padding-top: 60vh;
+}
+
+#voter a{
+    color: #fff;
+}
+
+#voter a:hover{
+	color:#62c5ff;
+    transition: ease-in-out 0.2s;
+    font-size: 6vh;
+}
+
+@media screen and (max-width: 1200px) {
+  .presentation_container {
+    padding: 0 300px 140px 300px;
+  }
+  .image {
+    width: 100%;
+    padding: 15px;
+  }
+  #f_future_studetns, #f_student_life, #f_collaboration {
+    flex: auto;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .presentation_container {
+    padding: 0 200px 140px 200px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .presentation_container {
+    padding: 0 15px 140px 15px;
+  }
+}
